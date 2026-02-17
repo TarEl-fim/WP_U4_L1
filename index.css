@@ -1,0 +1,51 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+#Output{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  border: 2px black solid;
+  height: 400px;
+  width: 450px;
+  margin: 10px;
+  padding: .3%;
+}
+
+#box1{
+  display: flex;
+  justify-content: center;
+}
+
+#box2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#Submit{
+  width: 100px;
+}
+
+#Input{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  display: flex;
+  border: 2px black solid;
+  height: 400px;
+  width: 450px;
+  margin: 10px;
+  padding: .3%;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+#sdp{
+  align-self: flex-end;
+}

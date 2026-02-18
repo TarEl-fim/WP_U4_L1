@@ -49,3 +49,10 @@ body{
 #sdp{
   align-self: flex-end;
 }
+
+#subButton{
+  display: flex;
+  background-color: aqua;
+  height: 30px;
+  width: 50px;
+}

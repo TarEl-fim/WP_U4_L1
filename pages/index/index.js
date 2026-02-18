@@ -13,6 +13,8 @@ function genTextInp(){
   OutputBox.id = 'Output';
   
   const InputBox = document.createElement('textarea');
+  const counterButton = document.createElement('div');
+  div2.appendChild(counterButton);
 
   InputBox.type = 'text';
 
@@ -23,8 +25,19 @@ function genTextInp(){
   body.appendChild(div1);
   body.appendChild(div2);
 
+  const submit = document.createElement('div');
+  submit.id = 'subButton';
+  submit.onclick = function(){encrypt()};
+  body.appendChild(submit);
+
+
+
   InputBox.addEventListener('input',function() {
     OutputBox.innerText = this.value;
   })
 
+}
+
+function encrypt(){
+  console.log('yo mahmuh');
 }

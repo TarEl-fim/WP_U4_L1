@@ -1,4 +1,7 @@
-function genKeyboard(){  
+const alph = 'abcdefghijklmnopqrstuvwxyz';
+let shift = 0;
+
+function genTextInp(){  
   const body = document.getElementsByTagName('body')[0];
 
   const div1 = document.createElement('div');
@@ -9,7 +12,6 @@ function genKeyboard(){
   const OutputBox = document.createElement('div');
   OutputBox.id = 'Output';
   
-
   const InputBox = document.createElement('textarea');
 
   InputBox.type = 'text';

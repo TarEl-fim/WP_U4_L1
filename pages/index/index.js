@@ -59,9 +59,9 @@ function genTextInp(){
   decrypt.id = 'decrypt';
   decrypt.onclick = function(){de_encrypt(this)};
   
-  body.appendChild(encrypt);
-  body.appendChild(shifter);
-  body.appendChild(decrypt);
+  div2.appendChild(encrypt);
+  div2.appendChild(shifter);
+  div2.appendChild(decrypt);
 
 }
 

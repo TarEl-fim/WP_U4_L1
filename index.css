@@ -12,9 +12,18 @@ body{
   border: 2px black solid;
   height: 400px;
   width: 450px;
+  justify-content: start;
+  align-items: flex-start;
   margin: 10px;
   padding: .3%;
   overflow-wrap: anywhere;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
 }
 
 #box1{
@@ -24,6 +33,7 @@ body{
 
 #box2{
   display: flex;
+  height: fit-content;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -31,6 +41,7 @@ body{
 
 #Submit{
   width: 100px;
+  margin: .2%;
 }
 
 #Input{
@@ -53,8 +64,9 @@ body{
 .subButton{
   display: flex;
   background-color: aqua;
-  height: 30px;
-  width: 50px;
+  height: 60px;
+  width: 150px;
+  margin: 2%;
 }
 
 #decrypt{
@@ -67,4 +79,8 @@ body{
   width: 80px;
   flex-direction: row;
   justify-content: space-between;
+  background-color: antiquewhite;
+  border: 2px black solid;
+  border-radius: 25px;
+  padding: 1%;
 }

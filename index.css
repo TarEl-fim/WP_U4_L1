@@ -50,9 +50,21 @@ body{
   align-self: flex-end;
 }
 
-#subButton{
+.subButton{
   display: flex;
   background-color: aqua;
   height: 30px;
   width: 50px;
+}
+
+#decrypt{
+  background-color: blue;
+}
+
+#shiftCount{
+  display: flex;
+  height: 50px;
+  width: 80px;
+  flex-direction: row;
+  justify-content: space-between;
 }

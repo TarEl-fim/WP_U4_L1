@@ -1,7 +1,6 @@
 const alph = 'abcdefghijklmnopqrstuvwxyz';
 let shift = 0;
 
-console.log(alph[-1])
 
 function genTextInp(){  
   const body = document.getElementsByTagName('body')[0];
@@ -19,6 +18,7 @@ function genTextInp(){
   div2.appendChild(counterButton);
 
   InputBox.type = 'text';
+  InputBox.placeholder = 'Enter the text you wish to Encrypt/Decrypt...';
 
   InputBox.id = 'Input';
   div1.appendChild(InputBox);
@@ -53,11 +53,13 @@ function genTextInp(){
   encrypt.className = 'subButton';
   encrypt.id = 'encrypt';
   encrypt.onclick = function(){de_encrypt(this)};
+  encrypt.textContent = 'Encrypt!';
 
   const decrypt = document.createElement('div');
   decrypt.className = 'subButton';
   decrypt.id = 'decrypt';
   decrypt.onclick = function(){de_encrypt(this)};
+  decrypt.textContent = 'Decrypt!';
   
   div2.appendChild(encrypt);
   div2.appendChild(shifter);
@@ -87,14 +89,12 @@ function de_encrypt(button){
 
   if (button.id == 'decrypt'){
     shifter = -(shift);
-    console.log('decoded')
   }else{
     shifter = shift;
-    console.log('encoded')
   }
 
   const strInp = inp.value;
-  let returnStr = ''
+  let returnStr = '';
 
   for(let i = 0;i<strInp.length;i++){
     if(strInp[i]==' '){

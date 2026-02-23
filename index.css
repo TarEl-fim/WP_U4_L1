@@ -4,6 +4,11 @@ body{
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  background-color: cornsilk;
+}
+
+textarea{
+  background-color: antiquewhite;
 }
 
 #Output{
@@ -17,6 +22,7 @@ body{
   margin: 10px;
   padding: .3%;
   overflow-wrap: anywhere;
+  background-color: antiquewhite;
 }
 
 div{
@@ -63,14 +69,26 @@ div{
 
 .subButton{
   display: flex;
-  background-color: aqua;
+  background-color: rgb(103, 204, 125);
   height: 60px;
   width: 150px;
   margin: 2%;
 }
 
+.subButton:hover{
+  background-color: rgb(48, 112, 62);
+}
+
+a{
+  align-self: center;
+}
+
 #decrypt{
-  background-color: blue;
+  background-color: rgb(202, 90, 62);
+}
+
+#decrypt:hover{
+  background-color: rgb(109, 41, 24);
 }
 
 #shiftCount{
